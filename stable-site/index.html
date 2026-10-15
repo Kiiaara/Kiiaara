@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: заменить название и описание на настоящие -->
+  <title>Название конюшни — конные прогулки в Турции</title>
+  <meta name="description" content="Конюшня в Турции: конные прогулки, обучение верховой езде, фотосессии с лошадьми. Свяжитесь с нами в WhatsApp или Telegram.">
+  <meta property="og:title" content="Название конюшни">
+  <meta property="og:description" content="Конные прогулки и обучение верховой езде в Турции">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f2a24">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">Название конюшни</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">О нас</a>
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#gallery" data-i18n="nav.gallery">Галерея</a>
+      <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="ru">RU</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="tr">TR</button>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <img class="hero__bg" src="images/hero.jpg" alt="" onerror="this.remove()">
+    <div class="hero__shade"></div>
+    <div class="hero__content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Конюшня · Турция</p>
+      <h1>Название<br>конюшни</h1>
+      <p class="hero__lead" data-i18n="hero.lead">Конные прогулки среди гор и у моря, уроки верховой езды и тёплая встреча с нашими лошадьми</p>
+      <div class="hero__actions">
+        <a href="#contacts" class="btn btn--light" data-i18n="hero.cta">Записаться</a>
+        <a href="#gallery" class="btn btn--ghost" data-i18n="hero.cta2">Смотреть фото</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Вниз"></a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="about__text reveal">
+      <p class="eyebrow" data-i18n="about.eyebrow">О нас</p>
+      <h2 data-i18n="about.title">Место, где лошади — часть семьи</h2>
+      <p data-i18n="about.p1">Наша конюшня находится в живописном месте Турции. Мы заботимся о каждой лошади и подбираем маршрут под ваш опыт — от первой встречи с лошадью до долгих прогулок по горным тропам.</p>
+      <p data-i18n="about.p2">Инструкторы говорят на русском, английском и турецком. Подходит для детей и взрослых, новичков и опытных всадников.</p>
+      <ul class="stats">
+        <li><strong>10+</strong><span data-i18n="about.s1">лошадей</span></li>
+        <li><strong>5</strong><span data-i18n="about.s2">маршрутов</span></li>
+        <li><strong>7</strong><span data-i18n="about.s3">дней в неделю</span></li>
+      </ul>
+    </div>
+    <div class="about__photo reveal">
+      <img src="images/about.jpg" alt="Лошади нашей конюшни" loading="lazy" onerror="this.remove()">
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="section__head reveal">
+      <p class="eyebrow" data-i18n="services.eyebrow">Чем мы занимаемся</p>
+      <h2 data-i18n="services.title">Услуги</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="card__num">01</span>
+        <h3 data-i18n="services.c1t">Конные прогулки</h3>
+        <p data-i18n="services.c1d">Маршруты по лесу, горам и к морю. Длительность от 1 до 3 часов, сопровождение инструктора.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">02</span>
+        <h3 data-i18n="services.c2t">Обучение верховой езде</h3>
+        <p data-i18n="services.c2d">Индивидуальные занятия в манеже для взрослых и детей — с нуля или для повышения уровня.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">03</span>
+        <h3 data-i18n="services.c3t">Фотосессии с лошадьми</h3>
+        <p data-i18n="services.c3d">Красивые кадры на закате, в поле или у воды. Можно прийти со своим фотографом.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__num">04</span>
+        <h3 data-i18n="services.c4t">Знакомство для детей</h3>
+        <p data-i18n="services.c4d">Покормить, почистить и прокатиться на спокойной лошади — бережно и безопасно.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY =====
+       Чтобы добавить/заменить фото: положите файл в папку images/
+       и поправьте src ниже. Подписи (alt) — для поисковиков и незрячих. -->
+  <section class="section gallery" id="gallery">
+    <div class="section__head reveal">
+      <p class="eyebrow" data-i18n="gallery.eyebrow">Галерея</p>
+      <h2 data-i18n="gallery.title">Жизнь конюшни</h2>
+    </div>
+    <div class="grid">
+      <figure class="grid__item grid__item--tall reveal"><img src="images/gallery-1.jpg" alt="Фото конюшни 1" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item reveal"><img src="images/gallery-2.jpg" alt="Фото конюшни 2" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item reveal"><img src="images/gallery-3.jpg" alt="Фото конюшни 3" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item grid__item--wide reveal"><img src="images/gallery-4.jpg" alt="Фото конюшни 4" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item reveal"><img src="images/gallery-5.jpg" alt="Фото конюшни 5" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item grid__item--tall reveal"><img src="images/gallery-6.jpg" alt="Фото конюшни 6" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item reveal"><img src="images/gallery-7.jpg" alt="Фото конюшни 7" loading="lazy" onerror="this.remove()"></figure>
+      <figure class="grid__item grid__item--wide reveal"><img src="images/gallery-8.jpg" alt="Фото конюшни 8" loading="lazy" onerror="this.remove()"></figure>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS =====
+       TODO: заменить номер, ник в Telegram, Instagram, адрес и карту -->
+  <section class="section contacts" id="contacts">
+    <div class="contacts__info reveal">
+      <p class="eyebrow" data-i18n="contacts.eyebrow">Контакты</p>
+      <h2 data-i18n="contacts.title">Приезжайте в гости</h2>
+      <p data-i18n="contacts.lead">Напишите владельцу — подберём время и маршрут под вас. Отвечаем быстро.</p>
+
+      <div class="contacts__buttons">
+        <a class="btn btn--wa" href="https://wa.me/905000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--tg" href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
+      </div>
+
+      <dl class="contacts__list">
+        <div><dt data-i18n="contacts.phone">Телефон</dt><dd><a href="tel:+905000000000">+90 500 000 00 00</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://instagram.com/username" target="_blank" rel="noopener">@username</a></dd></div>
+        <div><dt data-i18n="contacts.address">Адрес</dt><dd data-i18n="contacts.addressValue">Анталья, Турция</dd></div>
+        <div><dt data-i18n="contacts.hours">Часы работы</dt><dd data-i18n="contacts.hoursValue">Ежедневно, 8:00 – 20:00</dd></div>
+      </dl>
+    </div>
+    <div class="contacts__map reveal">
+      <!-- Карта: Google Maps → «Поделиться» → «Встраивание карт» → скопировать src -->
+      <iframe title="Карта" src="https://www.google.com/maps?q=Antalya,Turkey&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Название конюшни</p>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/905000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Закрыть">×</button>
+    <button class="lightbox__prev" aria-label="Назад">‹</button>
+    <img alt="">
+    <button class="lightbox__next" aria-label="Вперёд">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
